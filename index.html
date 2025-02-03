@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> <!-- Lien Font Awesome -->
+</head>
+<body>
+
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="bene.png">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Academic career</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>ingeniering student</p>
+            <h1>Hi, I'm <span>Bénéwindé</span> <br>student at ENSIM</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------About----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="moi.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me...</h1>
+                <p>     Étudiant en informatique, je suis motivé
+                    par l’apprentissage et le développement
+                    de solutions technologiques efficaces.
+                    Curieux et rigoureux, je cherche à
+                    approfondir mes compétences et à
+                    contribuer à des projets stimulants. Mon
+                    objectif est d’acquérir une expérience
+                    variée qui me permettra de me spécialiser
+                    dans le domaine des systèmes embarqués.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab ('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab ('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab ('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                            <li><span>frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> kontieboange@gmail.com</p>
+                <p><i class="fas fa-phone-square"></i> 07 51 05 88 23</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+ 
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+</script>
+    
+</body>
+</html>
