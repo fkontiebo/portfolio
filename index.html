@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> <!-- Lien Font Awesome -->
+
 </head>
 <body>
 
@@ -24,8 +25,9 @@
             </ul>
         </nav>
         <div class="header-text">
-            <p>ingeniering student</p>
-            <h1>Hi, I'm <span>Bénéwindé</span> <br>student at ENSIM</h1>
+            <p>Elève Ingénieur</p>
+            <h1>Hello, Je suis <span>Bénéwindé</span></h1>
+            <h1><span id="typed-text"></span></h1>
         </div>
     </div>
 </div>
@@ -82,6 +84,165 @@
         </div>
     </div>
 </div>
+<!--------------------Education------------->
+<section id="education">
+    <h2 class="sub-title">My Education</h2>
+    <div class="timeline">
+        <div class="timeline-item left"> <!-- Ajout de la classe "left" -->
+            <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i> <!-- Icône de certification -->
+            </div>
+            <div class="timeline-content">
+                <h3>Ingénierie Informatique</h3>
+                <p>Développement de logiciels (systèmes embarqués) _ Tous les principes fondamentaux de la programmation, les structures de données, les algorithmes et les architectures logicielles. Également les architectures matérielles, la programmation en temps réel, les systèmes d'exploitation dédiés et les interfaces de communication..</p>
+                <span class="timeline-date">ENSIM | Le Mans, France (2024 - 2027)</span>
+            </div>
+        </div>        
+
+        <div class="timeline-item right"> <!-- Ajout de la classe "right" -->
+            <div class="timeline-icon">
+                <i class="fas fa-certificate"></i> <!-- Icône de diplôme -->
+            </div>
+            <div class="timeline-content">
+                <h3>3A Info-télécommunication</h3>
+                <p>Cette année m’a permis de développer des compétences fondamentales en informatique et en télécommunications. J’ai étudié des domaines clés tels que la programmation, les réseaux, et les systèmes d’information,.</p>
+                <span class="timeline-date">EPO | Ouagadougou, Burkina Faso (2023 - 2024)</span>
+            </div>
+        </div>
+        <div class="timeline-item left"> <!-- Ajout de la classe "left" -->
+            <div class="timeline-icon">
+                <i class="fas fa-book"></i> <!-- Utilisation correcte de Font Awesome -->
+            </div>
+            <div class="timeline-content">
+                <h3>CPGE MP</h3>
+                <p>Formation intensive en mathématiques avancées, physique et informatique, développant une grande rigueur analytique, des capacités de résolution de problèmes complexes et une forte résistance au stress...</p>
+                <span class="timeline-date">EPO | Ouagadougou, Burkina Faso (2021 - 2023)</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------Experience------------->
+
+<div class="conteneur">
+    <h2 class="sub-title">Expériences</h2>
+    <div class="onglets">
+      <button class="bouton-onglet actif" data-onglet="travail">Expériences Professionnelles</button>
+      <button class="bouton-onglet" data-onglet="projets">Projets Scolaires</button>
+      <button class="bouton-onglet" data-onglet="personnels">Projets Personnels</button>
+      <button class="bouton-onglet" data-onglet="competitions">Compétitions</button>
+    </div>
+
+    <div id="travail" class="contenu actif">
+      <div class="experience">
+        <h2>Stage d'Intégration et Déploiement Continu (Ingénierie CI/CD)</h2>
+        <p><strong>Lieu :</strong> Autriche | OPmobility<br>
+        <strong>Durée :</strong> Mai - Juin 2025</p>
+        <p><strong>Automatisation des builds avec Jenkins et Azure DevOps</strong></p>
+        <ul>
+          <li>Commande Bash pour exécuter le logiciel dans cmd (msbuild)</li>
+          <li>Jenkins comme serveur d'automatisation</li>
+          <li>Azure DevOps pour la gestion des versions et la création de pipelines</li>
+        </ul>
+        <p>L'objectif était d'assurer le déploiement continu du logiciel en automatisant les builds des différents codes contenus dans les dépôts Azure DevOps. Cela a permis d'augmenter la fiabilité et l'efficacité des mises à jour logicielles en automatisant la gestion des intégrations et des déploiements.</p>
+      </div>
+    </div>
+
+    <div id="projets" class="contenu">
+      <div class="experience">
+        <div class="projet-scolaire">
+            <div class="contenu-projet">
+              <div class="image-projet">
+                <img src="moi.jpg"  />
+              </div>
+              <div class="texte-projet">
+                <h2>FullStack Portfolio Project</h2>
+                <p><strong>Date :</strong> Janvier 2024</p>
+                <p><strong>Ce portfolio est un exemple pratique</strong></p>
+                <ul>
+                  <li>Développement MERN Stack (MongoDB - Express - React - Node.js)</li>
+                  <li>Utilisation de Tailwind pour le design</li>
+                  <li>Maîtrise des bases de données non relationnelles</li>
+                </ul>
+                <p>Il est important de noter qu'avant d'opter pour un stack MERN, j'ai exploré plusieurs frameworks (Angular, etc.) et, après comparaison, j'ai choisi React pour créer ce portfolio et mettre en avant mes compétences.</p>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+
+    <div id="personnels" class="contenu">
+      <div class="experience">
+        <h2>Projets Personnels</h2>
+        <p>Détails sur les projets personnels ici.</p>
+      </div>
+    </div>
+
+    <div id="competitions" class="contenu">
+      <div class="experience">
+        <h2>Compétitions</h2>
+        <p>Détails sur les compétitions ici.</p>
+      </div>
+    </div>
+  </div>
+
+<!--------------------portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="1A" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Curieux et rigoureux, je cherche à approfondir mes compétences et à contribuer à des projets stimulants.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="1A" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Curieux et rigoureux, je cherche à approfondir mes compétences et à contribuer à des projets stimulants.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="1A" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Curieux et rigoureux, je cherche à approfondir mes compétences et à contribuer à des projets stimulants.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="hobbies">
+    <div class="container">
+        <h2 class="sub-title">My Favorite Hobbies.</h2>
+        <div class="hobby-cards">
+            <div class="hobby-card">
+                <img src="jeu_vide0.jpg" >
+                <div class="hobby-content">
+                    <p class="since">Depuis petit</p>
+                    <h3>Gaming</h3>
+                    <p>Depuis tout petit je suis un fan de jeu video.</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <img src="football.jpg" >
+                <div class="hobby-content">
+                    <p class="since">Depuis 2019</p>
+                    <h3>Football</h3>
+                    <p>Un vrai fan de football. J'ai toujours fait parti des équipes scolaires, j'adore la sensation lorsque l'on gagne. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ----------contact---------- -->
  <div id="contact">
@@ -109,7 +270,7 @@
         </div>
     </div>
  </div>
-
+<!-- ----------script---------- -->
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");
@@ -125,8 +286,82 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab")
         }
-    
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Apparition
+                } else {
+                    entry.target.classList.remove("visible"); // Disparition
+                }
+            });
+        },
+        { threshold: 0.2 } // L'élément doit être 20% visible avant d'apparaître
+    );
+
+    items.forEach((item) => observer.observe(item));
+});
+
+
+
+const boutons = document.querySelectorAll('.bouton-onglet');
+    const contenus = document.querySelectorAll('.contenu');
+
+    boutons.forEach(bouton => {
+      bouton.addEventListener('click', () => {
+        // Supprimer la classe active de tous les boutons et contenus
+        boutons.forEach(btn => btn.classList.remove('actif'));
+        contenus.forEach(contenu => contenu.classList.remove('actif'));
+
+        // Ajouter la classe active au bouton cliqué et au contenu correspondant
+        bouton.classList.add('actif');
+        document.getElementById(bouton.getAttribute('data-onglet')).classList.add('actif');
+      });
+    });
+
+
+    const textElement = document.getElementById("typed-text");
+
+// Liste des textes à afficher
+const words = ["Systèmes embarqués", "Méthodes Agile", "IA, Machine learning","Developpement Logiciel"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    textElement.textContent = currentWord.substring(0, charIndex);
+
+    let typingSpeed = isDeleting ? 50 : 100; // Vitesse de frappe et suppression
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        typingSpeed = 1500; // Pause après avoir affiché le mot
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingSpeed = 500; // Pause avant de commencer le mot suivant
+    }
+
+    setTimeout(typeEffect, typingSpeed);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(typeEffect, 1000); // Démarrage après une courte pause
+});
+
 </script>
-    
+<!-- ----------script---------- -->   
+
 </body>
 </html>

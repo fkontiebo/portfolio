@@ -219,10 +219,380 @@ form input,form textarea{
     border-radius: 6px;
 
 }
-form.btn2{
-    padding: 60px 60px;
-    font-size:18px ;
-    margin-top:20px ;
+form.btn2 {
+    display: inline-block;
+    padding: 14px 50px;
+    font-size: 18px;
+    margin-top: 20px;
     cursor: pointer;
+    text-align: center;
+}
+
+
+/*--------------------portfolio------------->*/
+#portfolio{
+    padding: 50px 0;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position:absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s ;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height:100%;
+}
+
+/*--------------------hobbies------------->*/
+#hobbies {
+    padding: 50px 0;
+}
+
+
+.hobby-cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 240px;  /* Réduit la largeur */
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-3px);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 150px;  /* Réduit la hauteur */
+    object-fit: cover;
+}
+
+.hobby-content {
+    padding: 15px;  /* Réduit l'espace intérieur */
+    text-align: center;
+}
+
+.since {
+    font-size: 0.8rem;  /* Réduit la taille du texte */
+    color: #999;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.2rem;  /* Réduit la taille du titre */
+    color: #6b0b8b;
+    margin-bottom: 8px;
+}
+
+h3 + p {
+    color: #333;
+    font-size: 0.9rem;  /* Réduit la taille du texte */
+    line-height: 1.4;
+}
+/*--------------------Education------------->*/
+/* Section générale */
+#education {
+    padding: 50px 0;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Éléments de la timeline */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.timeline-item .timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item .timeline-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Positionner les icônes sur la ligne verticale */
+.timeline-icon {
+    position: absolute;
+    top: 50%; /* Centre l'icône verticalement */
+    left: 50%; /* Centre l'icône sur la barre */
+    width: 40px;
+    height: 40px;
+    background:#ff004f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%); /* Ajuste le centrage */
+    z-index: 2; /* Assure que l'icône est au-dessus des autres éléments */
+}
+
+/* Ajustement spécifique pour les éléments à gauche */
+.timeline-item.left .timeline-icon {
+    left: 100%; /* Décale l'icône à droite pour être sur la ligne */
+}
+
+/* Ajustement spécifique pour les éléments à droite */
+.timeline-item.right .timeline-icon {
+    left: 0; /* Place l'icône à gauche pour être sur la ligne */
+}
+
+
+
+
+/* Positionnement gauche/droite */
+.timeline-item.left {
+    left: 0;
+    text-align: left;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item.left .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-item.right .timeline-content {
+    margin-right: auto;
+}
+/* Initialement invisibles et décalés SEULEMENT pour le contenu */
+.timeline-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Une fois la classe "visible" ajoutée, le contenu devient visible */
+.timeline-item.visible .timeline-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* experience */
+.conteneur {
+    max-width: 1345px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .onglets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .bouton-onglet {
+    padding: 10px 20px;
+    background: #b4b3af;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    transition: background 0.3s;
+  }
+  .bouton-onglet.actif {
+    background: #ff004f;
+  }
+  .bouton-onglet:hover {
+    background: #ff004f;
+  }
+  .contenu {
+    display: none;
+    animation: fadeIn 0.3s;
+  }
+  .contenu.actif {
+    display: block;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .experience {
+    margin-top: 20px;
+  }
+  .experience h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .experience p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  .experience ul {
+    list-style: none;
+    padding: 0;
+  }
+  .experience ul li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  .experience ul li::before {
+    content: "\1F4CC"; /* Pin emoji */
+    margin-right: 0.5em;
+  }
+  /* text projet scolaire */
+  .projet-scolaire {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contenu-projet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .image-projet img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .texte-projet {
+    max-width: 600px;
+  }
+  
+  .texte-projet h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .texte-projet p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .texte-projet ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .texte-projet ul li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+  }
+  
+  .texte-projet ul li::before {
+    content: "\\1F4CC"; /* Emoji épingle */
+    margin-right: 0.5em;
+  }
+  
+  #typed-text {
+    color: #ff004f;
+    font-weight: bold;
+    border-right: 3px solid white; /* Effet curseur */
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+/* Animation du curseur */
+@keyframes blink {
+    50% { border-color: transparent; }
 }
