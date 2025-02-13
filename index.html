@@ -15,12 +15,11 @@
         <nav>
             <img src="bene.png">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Academic career</a></li>
+                <li><a href=".about">About</a></li>
+                <li><a href="education">Education</a></li>
                 <li><a href="#">Experiences</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="hobbies">Hobbies</a></li>
+                <li><a href="contact">Contact</a></li>
 
             </ul>
         </nav>
@@ -37,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="moi.jpg" >
+                <img src="about.jpg" >
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me...</h1>
@@ -133,49 +132,109 @@
     </div>
 
     <div id="travail" class="contenu actif">
-      <div class="experience">
-        <h2>Stage d'Intégration et Déploiement Continu (Ingénierie CI/CD)</h2>
-        <p><strong>Lieu :</strong> Autriche | OPmobility<br>
-        <strong>Durée :</strong> Mai - Juin 2025</p>
-        <p><strong>Automatisation des builds avec Jenkins et Azure DevOps</strong></p>
-        <ul>
-          <li>Commande Bash pour exécuter le logiciel dans cmd (msbuild)</li>
-          <li>Jenkins comme serveur d'automatisation</li>
-          <li>Azure DevOps pour la gestion des versions et la création de pipelines</li>
-        </ul>
-        <p>L'objectif était d'assurer le déploiement continu du logiciel en automatisant les builds des différents codes contenus dans les dépôts Azure DevOps. Cela a permis d'augmenter la fiabilité et l'efficacité des mises à jour logicielles en automatisant la gestion des intégrations et des déploiements.</p>
-      </div>
+        <div class="experience">
+            <!-- Premier bloc -->
+            <div class="projet-scolaire">
+                <div class="contenu-projet">
+                    <!-- Image à droite -->
+                    <div class="image-projet">
+                        <img src="enseignant.jpg" alt="Professeur particulier">
+                    </div>
+                    <!-- Texte à gauche -->
+                    <div class="texte-projet">
+                        <h2>Professeur Particulier en Mathématiques et Physiques-Chimie</h2>
+                        <p><strong>Date :</strong> 2024-2025</p>
+                        <p>J’ai accompagné des élèves pour renforcer leurs bases, surmonter leurs difficultés et exceller dans leurs études.</p>
+                        <p><strong>Acquis :</strong></p>
+                        <ul>
+                            <li>Gestion du temps et organisation des séances</li>
+                            <li>Patience et communication claire</li>
+                            <li>Pédagogie et adaptation aux élèves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Deuxième bloc -->
+            <div class="projet-scolaire">
+                <div class="contenu-projet">
+                    <!-- Image à gauche -->
+                    <div class="image-projet gauche">
+                        <img src="Air-Burkina (1).png" alt="Projet technique">
+                    </div>
+                    <!-- Texte à droite -->
+                    <div class="texte-projet droite">
+                        <h2>Stage découverte Air-Burkina</h2>
+                        <p><strong>Date :</strong> Aout-Septembre 2024</p>
+                        <p>Un stage de découverte des processus d'entreprises et interactions entre les services.</p>
+                        <p><strong>Missions :</strong></p>
+                        <ul>
+                            <li>Configuration téléphonie IP, poste de travail.</li>
+                            <li>Gestion des imprimantes en réseau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    
     <div id="projets" class="contenu">
       <div class="experience">
         <div class="projet-scolaire">
             <div class="contenu-projet">
               <div class="image-projet">
-                <img src="moi.jpg"  />
+                <img src="Jeu.png"  />
               </div>
-              <div class="texte-projet">
-                <h2>FullStack Portfolio Project</h2>
-                <p><strong>Date :</strong> Janvier 2024</p>
-                <p><strong>Ce portfolio est un exemple pratique</strong></p>
-                <ul>
-                  <li>Développement MERN Stack (MongoDB - Express - React - Node.js)</li>
-                  <li>Utilisation de Tailwind pour le design</li>
-                  <li>Maîtrise des bases de données non relationnelles</li>
-                </ul>
-                <p>Il est important de noter qu'avant d'opter pour un stack MERN, j'ai exploré plusieurs frameworks (Angular, etc.) et, après comparaison, j'ai choisi React pour créer ce portfolio et mettre en avant mes compétences.</p>
+              <div class="texte-projet droite">
+                <h2>Création du jeu de puissance 4</h2>
+                <p><strong>Date :</strong> Janvier 2025</p>
+                <p>j’ai développé une version console du célèbre jeu Puissance 4 en langage C. Ce projet m'a permis d'appliquer des concepts fondamentaux de la programmation, tels que la gestion des tableaux, les structures de contrôle et l'implémentation d'algorithmes pour vérifier les conditions de victoire.Ce projet m’a permis de renforcer mes compétences en C et de mieux comprendre la logique derrière les jeux de plateau informatisés.</p>
               </div>
             </div>
           </div>
           
-      </div>
+        </div>
+        <div class="experience">
+            <div class="projet-scolaire">
+                <!-- Image à gauche -->
+                <div class="image-projet">
+                    <img src="vroomly_1.png" alt="Projet technique">
+                </div>
+                <!-- Texte à droite -->
+                <div class="texte-projet droite">
+                    <h2>Site Web de location de voiture "VROOMLY"</h2>
+                    <p><strong>Date :</strong> Decemebre 2024</p>
+                    <p>Après le cours de technologie de l'internet, il a été donné comme projet de faire un site web de notre choix. Avec un camarade nous avons décidé d'en faire un de location de voitures. Il était exigé qu'il soit responsive et l'utilisation de git.</p>
+                    <p><strong>Acquis :</strong></p>
+                    <ul>
+                        <li>Prise en main des langages HTML, CSS, Javascript.</li>
+                        <li>Utilisation d'outils de developpement collaboratif (Github)</li>
+                        <li>Langage PHP et SQL pour la gestion de la base de données</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="personnels" class="contenu">
       <div class="experience">
-        <h2>Projets Personnels</h2>
-        <p>Détails sur les projets personnels ici.</p>
-      </div>
+        <div class="projet-scolaire">
+            <div class="contenu-projet">
+              <div class="image-projet">
+                <img src="Jeu.png"  />
+              </div>
+              <div class="texte-projet">
+                <h2>Portfolio Personnel</h2>
+                <p><strong>Date :</strong> Fevrier 2025</p>
+                <p>Ce portfolio est un exemple pratique, Après avoir fait VROOMLY avec mon ami j'ai voulu refaire un site complet pour renforcer ma maitrise et quoi de mieux qu'un portfolio pour une pierre deux coups.</p>
+                <p><strong>Acquis :</strong></p>
+                <ul>
+                  <li>Approfondissement en programmation web HTML,CSS,Javascript</li>
+                  <li>Utilisation de Github</li>
+                </ul>
+              </div>
+            </div>
+        </div>
     </div>
 
     <div id="competitions" class="contenu">
@@ -185,12 +244,11 @@
       </div>
     </div>
   </div>
-
-<!--------------------portfolio------------->
-
+</div>
+<!--------------------portfolio-------------
+<h2 class="sub-title">Projects</h2>
 <div id="portfolio">
     <div class="container">
-        <h2 class="sub-title">Projects</h2>
         <div class="work-list">
             <div class="work">
                 <img src="1A" alt="">
@@ -219,13 +277,13 @@
         </div>
     </div>
 </div>
-
+----->
 <section id="hobbies">
     <div class="container">
         <h2 class="sub-title">My Favorite Hobbies.</h2>
         <div class="hobby-cards">
             <div class="hobby-card">
-                <img src="jeu_vide0.jpg" >
+                <img src="Jeu_video.jpg" >
                 <div class="hobby-content">
                     <p class="since">Depuis petit</p>
                     <h3>Gaming</h3>
@@ -245,7 +303,7 @@
 </section>
 
 <!-- ----------contact---------- -->
- <div id="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -257,19 +315,20 @@
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="" class="btn btn2">Download CV</a>
+                <a href="CV_Bénéwindé.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <form id="contact-form">
+                    <input type="text" id="name" name="Name" placeholder="Your name" required>
+                    <input type="email" id="email" name="Email" placeholder="Your email" required>
+                    <textarea id="message" name="Message" rows="6" placeholder="Your message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
     </div>
- </div>
+</div>
+
 <!-- ----------script---------- -->
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
@@ -327,13 +386,16 @@ const boutons = document.querySelectorAll('.bouton-onglet');
     const textElement = document.getElementById("typed-text");
 
 // Liste des textes à afficher
-const words = ["Systèmes embarqués", "Méthodes Agile", "IA, Machine learning","Developpement Logiciel"];
+const words = ["Systèmes embarqués", "Méthodes Agile", "IA, Machine learning", "Développement Logiciel"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
 function typeEffect() {
+    if (!textElement) return; // Évite l'erreur si l'élément n'existe pas
+
     const currentWord = words[wordIndex];
+    
     if (isDeleting) {
         charIndex--;
     } else {
@@ -356,12 +418,45 @@ function typeEffect() {
     setTimeout(typeEffect, typingSpeed);
 }
 
+// Démarrer l'effet après le chargement de la page
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(typeEffect, 1000); // Démarrage après une courte pause
+    typeEffect();
 });
 
-</script>
-<!-- ----------script---------- -->   
 
+// formulaire pour recuperer les reponses
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+        // Récupération des valeurs du formulaire
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // URL du Google Forms
+        const formURL = "https://docs.google.com/forms/d/e/1FAIpQLScsHhQW18-wnXdlZDx5-cKG43YZbtipiBUl26Yv2X-5ZEB9vg/formResponse";
+
+        // Création de l'objet FormData avec les bons entry.XXXXXXX
+        const formData = new FormData();
+        formData.append("entry.1122442064", name);
+        formData.append("entry.1442597041", email);
+        formData.append("entry.1298033406", message);
+
+        // Envoi des données à Google Forms
+        fetch(formURL, {
+            method: "POST",
+            body: formData,
+            mode: "no-cors" // Évite les erreurs de CORS
+        }).then(() => {
+            alert("Message envoyé !");
+            document.getElementById("contact-form").reset(); // Réinitialise le formulaire
+        }).catch(error => console.error("Erreur :", error));
+    });
+});
+
+
+</script>
+
+  
 </body>
 </html>

@@ -25,8 +25,10 @@ nav {
     align-items: center;
     justify-content: space-between; /* Espacement entre logo et menu */
     flex-wrap: wrap;
-    width: 100%; /* S'assure que le conteneur prend toute la largeur disponible */
+    width: 100%; /* Prend toute la largeur */
+    padding: 0 50px; /* Ajoute un espace de 50px à gauche et à droite */
 }
+
 
 .logo {
     width: 140px;
@@ -39,13 +41,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 20px 10px; 
+    margin: 30px 15px; 
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     position: relative;
     margin-top: 10px;
     /*padding: 5px 0; /* Ajoute un peu d'espace vertical */
@@ -69,6 +71,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    padding: 0 50px; /* Ajoute un espace de 50px à gauche et à droite */
 }
 
 .header-text h1 {
@@ -219,7 +222,7 @@ form input,form textarea{
     border-radius: 6px;
 
 }
-form.btn2 {
+form .btn2 {
     display: inline-block;
     padding: 14px 50px;
     font-size: 18px;
@@ -299,7 +302,7 @@ form.btn2 {
 
 
 .hobby-cards {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -507,12 +510,10 @@ h3 + p {
   }
   .experience h2 {
     font-size: 24px;
-    color: #333;
     margin-bottom: 10px;
   }
   .experience p {
     font-size: 16px;
-    color: #555;
     line-height: 1.5;
   }
   .experience ul {
@@ -545,8 +546,8 @@ h3 + p {
   }
   
   .image-projet img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -558,13 +559,11 @@ h3 + p {
   
   .texte-projet h2 {
     font-size: 24px;
-    color: #333;
     margin-bottom: 10px;
   }
   
   .texte-projet p {
     font-size: 16px;
-    color: #555;
     line-height: 1.5;
   }
   
@@ -574,15 +573,6 @@ h3 + p {
     margin: 10px 0;
   }
   
-  .texte-projet ul li {
-    padding-left: 1.5em;
-    text-indent: -1.5em;
-  }
-  
-  .texte-projet ul li::before {
-    content: "\\1F4CC"; /* Emoji épingle */
-    margin-right: 0.5em;
-  }
   
   #typed-text {
     color: #ff004f;
