@@ -15,13 +15,14 @@
         <nav>
             <img src="bene.png">
             <ul>
-                <li><a href=".about">About</a></li>
-                <li><a href="education">Education</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="hobbies">Hobbies</a></li>
-                <li><a href="contact">Contact</a></li>
-
+                <li><a href="#about">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#conteneur">Experiences</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark"></i>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </nav>
         <div class="header-text">
             <p>Elève Ingénieur</p>
@@ -36,56 +37,33 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="about.jpg" >
+                <img src="moi-Photoroom.png" >
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me...</h1>
-                <p>     Étudiant en informatique, je suis motivé
-                    par l’apprentissage et le développement
-                    de solutions technologiques efficaces.
-                    Curieux et rigoureux, je cherche à
-                    approfondir mes compétences et à
-                    contribuer à des projets stimulants. Mon
-                    objectif est d’acquérir une expérience
-                    variée qui me permettra de me spécialiser
-                    dans le domaine des systèmes embarqués.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab ('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab ('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab ('education')">Education</p>
+                <h1 class="sub-title">About...</h1>
+                <p> &nbsp;&nbsp;&nbsp;Étudiant en informatique, je suis motivépar l’apprentissage et le développementde solutions technologiques efficaces.Curieux et rigoureux, je cherche àapprofondir mes compétences et àcontribuer à des projets stimulants. Monobjectif est d’acquérir une expériencevariée qui me permettra de me spécialiserdans le domaine des systèmes embarqués.</p>
+                <div class="container">
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6186/6186297.png" alt="Innovation">
+                        <span>Technological Innovation</span>
                     </div>
-                    <div class="tab-contents active-tab " id="skills">
-                        <ul>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                        </ul>
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Leadership">
+                        <span>Leadership</span>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                        </ul>
+                    <div class="card">
+                        <img src="https://cdn1.iconfinder.com/data/icons/business-incubator/64/technology-digital-future-intelligence-science-1024.png" alt="Digital Science">
+                        <span>Digital Science</span>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                            <li><span>frontend</span><br>Backend</li>
-                        </ul>
-                    </div>
+                </div>
             </div>
             
         </div>
     </div>
 </div>
 <!--------------------Education------------->
-<section id="education">
-    <h2 class="sub-title">My Education</h2>
+<section id="Education">
+    <h2 class="su-title">My Education</h2>
     <div class="timeline">
         <div class="timeline-item left"> <!-- Ajout de la classe "left" -->
             <div class="timeline-icon">
@@ -121,9 +99,8 @@
     </div>
 </section>
 <!--------------------Experience------------->
-
-<div class="conteneur">
-    <h2 class="sub-title">Expériences</h2>
+<h2 class="su-title">Expériences</h2>
+<div id="conteneur" class="conteneur">
     <div class="onglets">
       <button class="bouton-onglet actif" data-onglet="travail">Expériences Professionnelles</button>
       <button class="bouton-onglet" data-onglet="projets">Projets Scolaires</button>
@@ -144,7 +121,7 @@
                     <div class="texte-projet">
                         <h2>Professeur Particulier en Mathématiques et Physiques-Chimie</h2>
                         <p><strong>Date :</strong> 2024-2025</p>
-                        <p>J’ai accompagné des élèves pour renforcer leurs bases, surmonter leurs difficultés et exceller dans leurs études.</p>
+                        <p>&nbsp;&nbsp;&nbsp;J’ai accompagné des élèves pour renforcer leurs bases, surmonter leurs difficultés et exceller dans leurs études.</p>
                         <p><strong>Acquis :</strong></p>
                         <ul>
                             <li>Gestion du temps et organisation des séances</li>
@@ -188,7 +165,7 @@
               <div class="texte-projet droite">
                 <h2>Création du jeu de puissance 4</h2>
                 <p><strong>Date :</strong> Janvier 2025</p>
-                <p>j’ai développé une version console du célèbre jeu Puissance 4 en langage C. Ce projet m'a permis d'appliquer des concepts fondamentaux de la programmation, tels que la gestion des tableaux, les structures de contrôle et l'implémentation d'algorithmes pour vérifier les conditions de victoire.Ce projet m’a permis de renforcer mes compétences en C et de mieux comprendre la logique derrière les jeux de plateau informatisés.</p>
+                <p>&nbsp;&nbsp;&nbsp;j’ai développé une version console du célèbre jeu Puissance 4 en langage C. Ce projet m'a permis d'appliquer des concepts fondamentaux de la programmation, tels que la gestion des tableaux, les structures de contrôle et l'implémentation d'algorithmes pour vérifier les conditions de victoire.Ce projet m’a permis de renforcer mes compétences en C et de mieux comprendre la logique derrière les jeux de plateau informatisés.</p>
               </div>
             </div>
           </div>
@@ -204,7 +181,7 @@
                 <div class="texte-projet droite">
                     <h2>Site Web de location de voiture "VROOMLY"</h2>
                     <p><strong>Date :</strong> Decemebre 2024</p>
-                    <p>Après le cours de technologie de l'internet, il a été donné comme projet de faire un site web de notre choix. Avec un camarade nous avons décidé d'en faire un de location de voitures. Il était exigé qu'il soit responsive et l'utilisation de git.</p>
+                    <p>&nbsp;&nbsp;&nbsp;Après le cours de technologie de l'internet, il a été donné comme projet de faire un site web de notre choix. Avec un camarade nous avons décidé d'en faire un de location de voitures. Il était exigé qu'il soit responsive et l'utilisation de git.</p>
                     <p><strong>Acquis :</strong></p>
                     <ul>
                         <li>Prise en main des langages HTML, CSS, Javascript.</li>
@@ -226,7 +203,7 @@
               <div class="texte-projet">
                 <h2>Portfolio Personnel</h2>
                 <p><strong>Date :</strong> Fevrier 2025</p>
-                <p>Ce portfolio est un exemple pratique, Après avoir fait VROOMLY avec mon ami j'ai voulu refaire un site complet pour renforcer ma maitrise et quoi de mieux qu'un portfolio pour une pierre deux coups.</p>
+                <p>&nbsp;&nbsp;&nbsp;Ce portfolio est un exemple pratique, Après avoir fait VROOMLY avec mon ami j'ai voulu refaire un site complet pour renforcer ma maitrise et quoi de mieux qu'un portfolio pour une pierre deux coups.</p>
                 <p><strong>Acquis :</strong></p>
                 <ul>
                   <li>Approfondissement en programmation web HTML,CSS,Javascript</li>
@@ -328,6 +305,12 @@
         </div>
     </div>
 </div>
+
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Bénéwindé <i class="fa-solid fa-heart"></i>. Tous droits réservés.</p>
+    </div>
+</footer>
 
 <!-- ----------script---------- -->
 <script>

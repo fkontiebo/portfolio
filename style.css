@@ -100,18 +100,57 @@ nav ul li a:hover::after {
 
 }
 .about-col-1 img{
-    width: 100%;
+    width: 70%;
     border-radius: 15px;
-
+    margin-left: 100px;
 }
 .about-col-2{
     flex-basis: 60%;
     
 }
+#about p{
+    font-size: 20px;
+    text-align: justify;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color:#fff;
+}
+.su-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    margin-left: 230px;
+}
+.container {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.card {
+    width: 180px;
+    height: 150px;
+    background-color:#ff004f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 .tab-titles{
     display: flex;
@@ -453,6 +492,7 @@ h3 + p {
 }
 /* Initialement invisibles et décalés SEULEMENT pour le contenu */
 .timeline-content {
+    text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -585,4 +625,54 @@ h3 + p {
 /* Animation du curseur */
 @keyframes blink {
     50% { border-color: transparent; }
+}
+footer {
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+.footer-bottom .fa-solid{
+    color: #ff004f;
+}
+
+/*------------------Responsive------------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-family: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+
 }
