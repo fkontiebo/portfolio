@@ -123,15 +123,15 @@ nav ul li a:hover::after {
     color:#fff;
     margin-left: 230px;
 }
-.container {
+.wrapper {
     margin-top: 30px;
     display: flex;
     gap: 30px;
 }
-.card {
+.info-box {
     width: 180px;
     height: 150px;
-    background-color:#ff004f;
+    background-color: #ff004f;
     color: white;
     display: flex;
     flex-direction: column;
@@ -144,12 +144,12 @@ nav ul li a:hover::after {
     font-weight: bold;
     transition: transform 0.3s;
 }
-.card:hover {
+.info-box:hover {
     transform: scale(1.1);
 }
-.card img {
-    width: 50px;
-    height: 50px;
+.info-box img {
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
 }
 .tab-titles{
@@ -661,6 +661,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
+        flex-direction: column;
         background: #ff004f;
         position: fixed;
         top:0;
@@ -672,6 +673,20 @@ nav .fa-solid{
     nav ul li{
         display: block;
         margin: 25px;
+
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+    }
+    nav img {
+        width: 130px;
+        margin-top: 25px;
+    }
+    .fa-solid{
+        margin-top: 25px;
     }
 
 
