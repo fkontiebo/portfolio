@@ -14,15 +14,15 @@
     <div id="container">
         <nav>
             <img src="bene.png">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#conteneur">Experiences</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Elève Ingénieur</p>
@@ -438,6 +438,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }).catch(error => console.error("Erreur :", error));
     });
 });
+//-----------------
+var sidemeu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right="0px";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}
 
 
 </script>
