@@ -722,7 +722,7 @@ nav .fa-solid{
         margin-left: 40px;
     }
     .timeline-content p,h3{
-        text-align: left;
+        text-align: justify;
         font-size: 10px;
     }
     .timeline-content .timeline-date{
